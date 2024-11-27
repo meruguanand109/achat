@@ -16,7 +16,7 @@ export default function Global() {
 
   useEffect(() => {
     fetchGlobalMsgs()
-  }, [message])
+  }, [globalMsgs])
 
   const handleSend = async (event) => {
     event.preventDefault()
