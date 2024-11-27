@@ -6,7 +6,7 @@ export default function Login() {
   const navigate = useNavigate()
   const handleLogin = async (event) => {
     event.preventDefault()
-    const response = await fetch("http://192.168.29.221:5000/api/loginuser", {
+    const response = await fetch("https://achat-sbxs.onrender.com/api/loginuser", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
