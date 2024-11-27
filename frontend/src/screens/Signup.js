@@ -8,7 +8,7 @@ export default function Signup() {
     const navigate=useNavigate()
     const handleSignup=async(event)=>{
         event.preventDefault()
-        const response=await fetch("http://198.168.29.221:5000/api/createuser",{
+        const response=await fetch("https://achat-sbxs.onrender.com/api/createuser",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
