@@ -9,7 +9,7 @@ export default function Global() {
   const email = localStorage.getItem("email")
 
   const fetchGlobalMsgs = async () => {
-    const response = await fetch("http://192.168.29.221:5000/api/getglobalmsgs")
+    const response = await fetch("https://achat-sbxs.onrender.com/api/getglobalmsgs")
     const formattedResponse = await response.json()
     setGlobalMsgs(formattedResponse.globalMsgs)
   }
@@ -23,7 +23,7 @@ export default function Global() {
     if (message.length === 0) {
       alert("Please type the message")
     } else {
-      const response = await fetch("http://192.168.29.221:5000/api/postglobalmsg", {
+      const response = await fetch("https://achat-sbxs.onrender.com/api/postglobalmsg", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
